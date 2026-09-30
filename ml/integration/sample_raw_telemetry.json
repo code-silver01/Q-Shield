@@ -1,0 +1,256 @@
+{
+  "channel": "primary",
+  "window_seconds": 5.0,
+  "packets": [
+    {
+      "timestamp": 0.1,
+      "seq_num": 1,
+      "status": "ok"
+    },
+    {
+      "timestamp": 0.203,
+      "seq_num": 2,
+      "status": "ok"
+    },
+    {
+      "timestamp": 0.3003,
+      "seq_num": 3,
+      "status": "ok"
+    },
+    {
+      "timestamp": 0.3918,
+      "seq_num": 4,
+      "status": "ok"
+    },
+    {
+      "timestamp": 0.4874,
+      "seq_num": 5,
+      "status": "ok"
+    },
+    {
+      "timestamp": 0.5779,
+      "seq_num": 6,
+      "status": "retransmit"
+    },
+    {
+      "timestamp": 0.6785,
+      "seq_num": 7,
+      "status": "ok"
+    },
+    {
+      "timestamp": 0.7929,
+      "seq_num": 8,
+      "status": "ok"
+    },
+    {
+      "timestamp": 0.8881,
+      "seq_num": 9,
+      "status": "ok"
+    },
+    {
+      "timestamp": 0.9821,
+      "seq_num": 10,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.0871,
+      "seq_num": 11,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.1907,
+      "seq_num": 12,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.2918,
+      "seq_num": 13,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.3829,
+      "seq_num": 14,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.4826,
+      "seq_num": 15,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.5898,
+      "seq_num": 16,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.6772,
+      "seq_num": 17,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.7727,
+      "seq_num": 18,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.8554,
+      "seq_num": 19,
+      "status": "ok"
+    },
+    {
+      "timestamp": 1.9433,
+      "seq_num": 20,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.0265,
+      "seq_num": 22,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.1242,
+      "seq_num": 23,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.2123,
+      "seq_num": 24,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.315,
+      "seq_num": 25,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.4166,
+      "seq_num": 26,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.5148,
+      "seq_num": 27,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.5925,
+      "seq_num": 28,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.6873,
+      "seq_num": 29,
+      "status": "retransmit"
+    },
+    {
+      "timestamp": 2.7868,
+      "seq_num": 30,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.8879,
+      "seq_num": 31,
+      "status": "ok"
+    },
+    {
+      "timestamp": 2.9737,
+      "seq_num": 33,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.0691,
+      "seq_num": 34,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.1597,
+      "seq_num": 35,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.252,
+      "seq_num": 36,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.3632,
+      "seq_num": 37,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.4554,
+      "seq_num": 38,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.5551,
+      "seq_num": 39,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.6643,
+      "seq_num": 40,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.7587,
+      "seq_num": 41,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.8576,
+      "seq_num": 42,
+      "status": "ok"
+    },
+    {
+      "timestamp": 3.9587,
+      "seq_num": 43,
+      "status": "rejected_decrypt"
+    },
+    {
+      "timestamp": 4.0593,
+      "seq_num": 44,
+      "status": "ok"
+    },
+    {
+      "timestamp": 4.1478,
+      "seq_num": 45,
+      "status": "ok"
+    },
+    {
+      "timestamp": 4.2485,
+      "seq_num": 46,
+      "status": "ok"
+    },
+    {
+      "timestamp": 4.3631,
+      "seq_num": 47,
+      "status": "ok"
+    },
+    {
+      "timestamp": 4.4488,
+      "seq_num": 48,
+      "status": "ok"
+    },
+    {
+      "timestamp": 4.5577,
+      "seq_num": 49,
+      "status": "ok"
+    },
+    {
+      "timestamp": 4.6589,
+      "seq_num": 50,
+      "status": "ok"
+    },
+    {
+      "timestamp": 4.7527,
+      "seq_num": 51,
+      "status": "ok"
+    },
+    {
+      "timestamp": 4.8749,
+      "seq_num": 52,
+      "status": "ok"
+    }
+  ]
+}

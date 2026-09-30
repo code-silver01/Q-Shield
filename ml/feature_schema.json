@@ -1,0 +1,54 @@
+{
+  "model": "channel_iforest_v1",
+  "description": "Feature schema for the Q-SHIELD communication-channel anomaly Isolation Forest. One sample = one summarized observation WINDOW on a single channel (primary or LoRa), not a single packet.",
+  "window_seconds": 5.0,
+  "feature_order": [
+    "packet_rate",
+    "inter_arrival_time",
+    "jitter",
+    "packet_loss",
+    "rejection_rate",
+    "retransmissions"
+  ],
+  "features": {
+    "packet_rate": {
+      "unit": "packets/second",
+      "description": "Number of packets received on this channel during the window, divided by window_seconds.",
+      "typical_normal_range": "~5-15 (assumed synthetic baseline; replace with real Pi baseline stats)"
+    },
+    "inter_arrival_time": {
+      "unit": "seconds",
+      "description": "Mean time between consecutive packet arrivals within the window.",
+      "typical_normal_range": "~0.06-0.15"
+    },
+    "jitter": {
+      "unit": "seconds",
+      "description": "Standard deviation of inter-arrival times within the window.",
+      "typical_normal_range": "~0.002-0.02"
+    },
+    "packet_loss": {
+      "unit": "fraction (0.0-1.0)",
+      "description": "Fraction of expected packets (by sequence number) not received during the window.",
+      "typical_normal_range": "~0.0-0.03"
+    },
+    "rejection_rate": {
+      "unit": "fraction (0.0-1.0)",
+      "description": "Fraction of received packets rejected by the crypto layer during the window (failed decryption, failed ML-DSA signature, rejected/replayed nonce). Replay/tampering is primarily handled by the crypto layer itself, not this model - this feature just lets rejection spikes contribute as an anomaly signal.",
+      "typical_normal_range": "~0.0-0.01"
+    },
+    "retransmissions": {
+      "unit": "count",
+      "description": "Number of retransmitted packets observed during the window (ACK timeout / NACK triggered resend).",
+      "typical_normal_range": "~0-2"
+    }
+  },
+  "excluded_features": {
+    "rssi": "Not available from hardware yet. Add as a v2 schema once the Raspberry Pi/LoRa side provides real values - do not fabricate it.",
+    "snr": "Same as rssi - LoRa-side signal quality metric, add in v2 once real hardware data exists."
+  },
+  "input_format": "A dict with exactly the 6 keys above (any key order - code reindexes to feature_order before scoring), or a pandas DataFrame/CSV with these columns for batch scoring.",
+  "notes": [
+    "All 'typical_normal_range' values are ASSUMED placeholders from synthetic data generation (see ml/data/generate_synthetic_data.py). They must be replaced with statistics computed from real Raspberry Pi baseline captures before this model is trusted operationally.",
+    "Training uses only assumed-normal synthetic data (unsupervised). Synthetic attack data is used for evaluation only, never for training."
+  ]
+}
